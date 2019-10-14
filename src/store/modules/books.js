@@ -45,17 +45,28 @@ const actions = {
           explicitArray: false,
         })
           .then((result) => {
-            if (result.GoodreadsResponse.reviews.$.total === '0') {
-              commit('setError', 'Your To-Read shelf seems to be empty.');
+            try {
+              const hasBooksResponse = !!result.GoodreadsResponse.books;
+              const list = result.GoodreadsResponse[hasBooksResponse ? 'books' : 'reviews'];
+              if (list.$.total === '0') {
+                commit('setError', 'Your To-Read shelf seems to be empty.');
+                commit('setCurrentBook', undefined);
+              } else {
+                const book = hasBooksResponse ? list.book : list.review.book;
+                if (!book) {
+                  throw new Error();
+                }
+                commit('setCurrentBook', book);
+                commit('setError', undefined);
+              }
+            } catch (err) {
+              console.error(err);
               commit('setCurrentBook', undefined);
-            } else {
-              commit('setError', undefined);
-              commit('setCurrentBook', result.GoodreadsResponse.reviews.review.book);
+              commit('setError', 'Could not load books. Please try again.');
             }
           });
       })
       .catch((error) => {
-        console.log(error.response.status);
         if (error.response.status === 404) {
           commit('setError', 'Could not find a user with the given ID.');
         }
