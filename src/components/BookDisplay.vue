@@ -27,7 +27,7 @@
             <footer class="card-footer">
               <p class="card-footer-item">
                 <span>
-                  <a :href="book.link">View on Goodreads</a>
+                  <a :href="book.link" rel="noopener noreferrer">View on Goodreads</a>
                 </span>
               </p>
             </footer>
