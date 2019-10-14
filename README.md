@@ -2,11 +2,14 @@
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000" />
   <img alt="Build Status" src="https://travis-ci.org/BerniWittmann/pick-a-book.svg?branch=master" />
+  <img alt="License" src="https://img.shields.io/github/license/berniwittmann/pick-a-book">
 </p>
 
 > Pick your next book to read from your Goodreads To-Read shelf on [https://berniwittmann.github.io/pick-a-book/](https://berniwittmann.github.io/pick-a-book/)
 
-![](https://media.giphy.com/media/XzkO1qCPtqWOzXF1Lu/giphy.gif)
+<p>
+  <img alt="Demo Video" src="https://media.giphy.com/media/XzkO1qCPtqWOzXF1Lu/giphy.gif" />
+</p>
 
 ## Use it online
 
