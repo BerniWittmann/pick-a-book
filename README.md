@@ -31,8 +31,9 @@ npm run serve
 
 👤 **Bernhard Wittmann**
 
-* Twitter: [@berniwittmann](https://twitter.com/berniwittmann)
+* Website: [https://bernhardwittmann.com](https://bernhardwittmann.com)
 * Github: [@BerniWittmann](https://github.com/BerniWittmann)
+* Twitter: [@berniwittmann](https://twitter.com/berniwittmann)
 
 ## Show your support
 
