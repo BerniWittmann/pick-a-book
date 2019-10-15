@@ -1,6 +1,6 @@
 <h1 align="center">Welcome to Pick a Book 👋</h1>
 <p>
-  <img alt="Version" src="https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000" />
+  <img alt="Version" src="https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=86400" />
   <img alt="Build Status" src="https://travis-ci.org/BerniWittmann/pick-a-book.svg?branch=master" />
   <img alt="License" src="https://img.shields.io/github/license/berniwittmann/pick-a-book">
 </p>
